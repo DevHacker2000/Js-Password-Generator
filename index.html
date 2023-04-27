@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <span>Your password:</span>
+            <span id="password"></span>
+        </div>
+        <div class="option">
+            <label class="option-label" for="use-numbers">Use numbers</label>
+            <input class="option-checkbox" type="checkbox" id="use-numbers">
+        </div>
+        <div class="option">
+            <label class="option-label" for="use-special-symbols">Use special symbols</label>
+            <input class="option-checkbox" type="checkbox" id="use-special-symbols">
+        </div>
+        <div class="option">
+            <label class="option-label" for="use-uppercase-letters">Use uppercase letters</label>
+            <input class="option-checkbox" type="checkbox" id="use-uppercase-letters">
+        </div>
+        <div class="option">
+            <label class="option-label" for="password-length">
+                Password length. Default 6.
+            </label>
+            <input type="number" min="6" max="120" id="password-length">
+        </div>
+        <button id="generate-btn">Generate password</button>
+    </div>
+    <script src="./index.js"></script>
+</body>k
+</html>
